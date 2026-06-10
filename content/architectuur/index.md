@@ -1,5 +1,5 @@
 +++
 title = "Architectuur"
 date = 2023-05-20T00:00:00+02:00
-description = "Architectuur"
+description = "Selectie uit de categorie Architectuur"
 +++
