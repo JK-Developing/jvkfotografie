@@ -31,3 +31,21 @@ timeout = "120s"
 [services]
   [services.rss]
     limit = 100
+
+[menu]
+  [[menu.main]]
+    name = "Natuur"
+    url = "/natuur/"
+    weight = 10
+  [[menu.main]]
+    name = "Portret"
+    url = "/portret/"
+    weight = 20
+  [[menu.main]]
+    name = "Architectuur"
+    url = "/architectuur/"
+    weight = 30
+  [[menu.main]]
+    name = "Over"
+    url = "/about/"
+    weight = 40
