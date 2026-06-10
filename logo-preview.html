@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JvK Logo Preview</title>
+  <style>
+    :root {
+      --bg: #e2e8f0;
+      --card: #ffffff;
+      --text: #0f172a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background: radial-gradient(circle at top left, #f8fafc 0%, var(--bg) 65%);
+      color: var(--text);
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+    .card {
+      width: min(1100px, 100%);
+      background: var(--card);
+      border-radius: 18px;
+      box-shadow: 0 20px 60px rgba(15, 23, 42, 0.12);
+      padding: 24px;
+    }
+    h1 {
+      margin: 0 0 14px;
+      font-size: clamp(20px, 3vw, 34px);
+    }
+    p {
+      margin: 0 0 20px;
+      color: #334155;
+    }
+    .grid {
+      display: grid;
+      gap: 18px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+    .panel {
+      border: 1px solid #cbd5e1;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #f8fafc;
+    }
+    .panel h2 {
+      margin: 0;
+      padding: 10px 12px;
+      font-size: 14px;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      background: #e2e8f0;
+      color: #1e293b;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      background: #f8fafc;
+      display: block;
+    }
+    .preview-bg {
+      padding: 20px;
+    }
+    .preview-bg.light {
+      background: #f8fafc;
+    }
+    .preview-bg.dark {
+      background: #0f172a;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>Conceptlogo: JvK Minimal</h1>
+    <p>Minimalistisch voorstel op basis van je originele beeldmerk, nog niet gepubliceerd.</p>
+    <section class="grid">
+      <article class="panel">
+        <h2>Basis / Referentie</h2>
+        <img src="static/images/jvk-logo-reference.jpg" alt="Referentielogo JvK">
+      </article>
+      <article class="panel">
+        <h2>Nieuw Concept</h2>
+        <div class="preview-bg light">
+          <img src="static/images/jvk-fotografie-logo-concept.svg" alt="Nieuw minimalistisch conceptlogo JvK op lichte achtergrond">
+        </div>
+      </article>
+      <article class="panel">
+        <h2>Donkere modus test</h2>
+        <div class="preview-bg dark">
+          <img src="static/images/jvk-fotografie-logo-concept.svg" alt="Nieuw minimalistisch conceptlogo JvK op donkere achtergrond">
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

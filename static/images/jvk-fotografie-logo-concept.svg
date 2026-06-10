@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">JvK logo concept minimal</title>
+  <desc id="desc">Minimalistisch logo gebaseerd op het originele JvK-beeldmerk.</desc>
+  <defs>
+    <linearGradient id="strokeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <radialGradient id="lensOuter" cx="38%" cy="34%" r="70%">
+      <stop offset="0%" stop-color="#64748b"/>
+      <stop offset="52%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </radialGradient>
+    <radialGradient id="lensInner" cx="35%" cy="28%" r="75%">
+      <stop offset="0%" stop-color="#a5f3fc" stop-opacity="0.85"/>
+      <stop offset="30%" stop-color="#67e8f9" stop-opacity="0.72"/>
+      <stop offset="60%" stop-color="#22d3ee" stop-opacity="0.45"/>
+      <stop offset="83%" stop-color="#0f172a" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+    <linearGradient id="bladeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <style>
+      .word {
+        fill: #0f172a;
+        font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+      .name {
+        font-size: 168px;
+        font-weight: 700;
+        letter-spacing: 3px;
+      }
+      .line {
+        fill: #475569;
+      }
+      @media (prefers-color-scheme: dark) {
+        .word {
+          fill: #f8fafc;
+        }
+        .line {
+          fill: #cbd5e1;
+        }
+      }
+    </style>
+  </defs>
+
+  <g>
+    <circle cx="210" cy="210" r="144" fill="#ffffff" opacity="0.95"/>
+    <circle cx="210" cy="210" r="136" fill="none" stroke="url(#strokeGrad)" stroke-width="10" opacity="0.9"/>
+    <circle cx="210" cy="210" r="124" fill="url(#lensOuter)"/>
+    <circle cx="210" cy="210" r="110" fill="none" stroke="#94a3b8" stroke-width="4" opacity="0.75"/>
+    <circle cx="210" cy="210" r="95" fill="#111827"/>
+
+    <g transform="translate(210,210)" opacity="0.8">
+      <path d="M0,-76 L28,-48 L0,-10 L-28,-48 Z" fill="url(#bladeGrad)"/>
+      <path d="M53,-53 L63,-15 L25,8 L12,-30 Z" fill="url(#bladeGrad)"/>
+      <path d="M76,0 L48,28 L10,0 L48,-28 Z" fill="url(#bladeGrad)"/>
+      <path d="M53,53 L15,63 L-8,25 L30,12 Z" fill="url(#bladeGrad)"/>
+      <path d="M0,76 L-28,48 L0,10 L28,48 Z" fill="url(#bladeGrad)"/>
+      <path d="M-53,53 L-63,15 L-25,-8 L-12,30 Z" fill="url(#bladeGrad)"/>
+      <path d="M-76,0 L-48,-28 L-10,0 L-48,28 Z" fill="url(#bladeGrad)"/>
+      <path d="M-53,-53 L-15,-63 L8,-25 L-30,-12 Z" fill="url(#bladeGrad)"/>
+    </g>
+
+    <circle cx="210" cy="210" r="72" fill="url(#lensInner)"/>
+    <circle cx="210" cy="210" r="46" fill="#020617"/>
+    <circle cx="190" cy="186" r="17" fill="#e2e8f0" opacity="0.55"/>
+    <circle cx="228" cy="234" r="9" fill="#a5f3fc" opacity="0.55"/>
+    <circle cx="210" cy="210" r="124" fill="none" stroke="#ffffff" stroke-width="5" opacity="0.8"/>
+  </g>
+
+  <rect class="line" x="420" y="96" width="2" height="228"/>
+
+  <g transform="translate(470,145)">
+    <text class="word name" x="0" y="108">JvK</text>
+  </g>
+</svg>
