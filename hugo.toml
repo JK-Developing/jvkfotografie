@@ -1,0 +1,33 @@
+baseURL = "https://jk-developing.github.io/jvkfotografie/"
+title = "JVK Fotografie"
+languageCode = "nl-NL"
+defaultContentLanguage = "nl"
+enableRobotsTXT = true
+theme = "hugo-theme-gallery"
+disableKinds = ["taxonomy"]
+timeZone = "Europe/Amsterdam"
+timeout = "120s"
+
+[params]
+  defaultTheme = "dark"
+  description = "Portfolio van JVK Fotografie"
+  title = "JVK Fotografie"
+  [params.author]
+    name = "jvkfotografie"
+
+[outputs]
+  home = ["HTML", "RSS"]
+  page = ["HTML"]
+  section = ["HTML"]
+
+[imaging]
+  quality = 85
+  resampleFilter = "CatmullRom"
+  [imaging.exif]
+    disableDate = false
+    disableLatLong = true
+    includeFields = "ImageDescription|Orientation"
+
+[services]
+  [services.rss]
+    limit = 100
